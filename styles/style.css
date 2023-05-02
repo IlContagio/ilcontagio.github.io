@@ -66,8 +66,8 @@ div.gallery ul li, div.gallery li img {
 div.gallery ul li {
 	position: relative;
 	float: left;
-	width: 130px;
-	height: 130px;
+	width: 283px;
+	height: 400px;
 	margin: 5px;
 	padding: 5px;
 	z-index: 0;
@@ -86,8 +86,8 @@ div.gallery ul li img {
 	top: 0;
 	border: 1px solid #dddddd;
 	padding: 5px;
-	width: 130px;
-	height: 130px;
+	width: 283px;
+	height: 400px;
 	background: #f0f0f0;
 }
 
