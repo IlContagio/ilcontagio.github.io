@@ -1,7 +1,7 @@
 title: Il Contagio
-#author:
-#  name: IlContagio
-#  email: redazione.scrittura@protonmail.com
+author:
+  name: IlContagio
+  email: redazione.scrittura@protonmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
