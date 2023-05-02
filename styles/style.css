@@ -92,10 +92,10 @@ div.gallery ul li img {
 }
 
 div.gallery ul li img:hover {
-	width: 200px;
-	height: 200px;
-	margin-top: -130px;
-	margin-left: -130px;
+	width: 566px;
+	height: 800px;
+	margin-top: -330px;
+	margin-left: -330px;
 	top: 65%;
 	left: 65%;
 }
