@@ -1,4 +1,4 @@
-# _ 
+# Pazienti 
 
 ## Paziente 0
 ![paziente-0_cover](imgs/600px.pdf_0000_Layer-2.png) ![paziente-0_content](imgs/600px.pdf_0002_CONTENT-1-ISOLAMENTO-def2.png) 
