@@ -2,15 +2,27 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<h1>Il <em>Contagio</em></h1>
 	</header>
-	<div class="wrapper">
-		<div class="gallery">
-			<ul>
-				<li><img src="imgs/600px.pdf_0000_Layer-2.png"></li>
-				<li><img src="imgs/600px.pdf_0003_Layer-1.png"></li>
-				<li><img src="imgs/600px.pdf_0001_COVER-1-ISOLAMENTO-def.png"></li>
-				<li><img src="imgs/600px.pdf_0002_CONTENT-1-ISOLAMENTO-def2.png"></li>
+<ul id="all-images">
 
-			</ul>
-		</div>
-		<!--<p class="attribution">Images featured in this demo are the works of <a href="https://d.hatena.ne.jp/koochinko">Mernan Behairi</a>. Inspired by an old post of <a href="https://twitter.com/SohTanaka">@Sohtanaka</a>. It originally uses jQuery. Access original <a href="https://web.archive.org/web/20110323065449/http://www.sohtanaka.com/web-design/fancy-thumbnail-hover-effect-w-jquery/">tutorial</a> and <a href="https://web.archive.org/web/20110323065952/http://www.sohtanaka.com/web-design/examples/image-zoom/">demo</a>.</p>
-	--> </div>
+</ul>
+    <li><img class="small-image" src="imgs/600px.pdf_0000_Layer-2.png" alt=""></li>  
+  <li><img class="small-image" src="imgs/600px.pdf_0003_Layer-1.png" alt=""></li>  
+  <li><img class="small-image" src="imgs/600px.pdf_0001_COVER-1-ISOLAMENTO-def.png" alt=""></li>  
+  <li><img class="small-image" src="imgs/600px.pdf_0002_CONTENT-1-ISOLAMENTO-def2.png" alt=""></li>  
+</ul>
+
+
+
+<!-- // popup modal -->
+
+<div id="show_image_popup">
+  <div class="close-btn-area">
+
+    <button id="close-btn">X</button> 
+  </div>
+  <div id="image-show-area">
+    <img id="large-image" src="" alt="">
+  </div>
+</div>
+
+<script type="text/javascript" src="js/img-script.js"></script>
