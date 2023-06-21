@@ -36,7 +36,9 @@ h1 {
 	color: #FFF;
 	font-size: 2.3em;
 }
-
+ul {
+    columns: 2;
+}
 em {
 	color: #232027;
 }
