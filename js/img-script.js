@@ -39,11 +39,11 @@ $( document ).ready(function(){
       // add active class
        $(this).addClass('active');
 
-      var image_path = $(this).attr('src'); 
+      var image_path = $(imgs).attr('src'); 
       $("#show_image_popup").fadeOut();
       // now st this path to our popup image src
       $("#show_image_popup").fadeIn();
-      $("#large-image").attr('src',image_path);
+      $("cover_0-web.png").attr('src',image_path);
 
     })
 
