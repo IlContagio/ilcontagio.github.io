@@ -1,7 +1,13 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    padding: 1rem;
+    font-family: Lato, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 20, 20, 1);
+    box-sizing: border-box;
 }
 
 header {
@@ -15,142 +21,109 @@ header {
 }
 
 h1 {
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #FFF;
-	font-size: 2.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF;
+    font-size: 2.3em;
 }
+
 em {
-	color: #232027;
+    color: #232027;
 }
 
 .wrapper {
-	width: 40%;
-	margin: 40px auto;
+    max-width: 100%;
+    width: 90%;
+    margin: 40px auto;
 }
 
-div.gallery {
-	margin-top: 30px;
+.gallery {
+    margin-top: 30px;
 }
 
 p.attribution {
-	font-family: 'Consolas';
-	color: #000;
-	clear: both;
-	text-align: center;
-	line-height: 25px;
-	padding-top: 30px;
+    font-family: 'Consolas', monospace;
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 30px;
 }
 
 p.attribution a {
-	color: #4c8d7c;
-}
-
-
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: Lato, sans-serif;
-	margin: 0;
-	padding: 1rem;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(20, 20, 20, 1);
+    color: #4c8d7c;
 }
 
 img {
-	width: 100%;
-	display: block;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	transition: transform 1000ms;
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: grid;
-	gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 100%;
-	width: 70rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    max-width: 100%;
+    width: 100%;
 }
 
 figure {
-	margin: 0;
-	position: relative;
-	overflow: hidden;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 figure::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	background: rgba(0, 0, 0, 0.5);
-	transform-origin: center;
-	opacity: 0;
-	transform: scale(2);
-	transition: opacity 300ms;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
 }
 
 figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	place-items: center;
-	text-align: center;
-	padding: 1rem;
-	color: white;
-	font-size: 1.2rem;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 600ms, transform 600ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
 }
 
-a:is(:hover, :focus) figure::after {
-	opacity: 1;
+a:hover figure::after,
+a:focus figure::after {
+    opacity: 1;
+    transform: scale(2.5);
+    transition: transform 900ms;
 }
 
-a:is(:hover, :focus) figcaption {
-	opacity: 1;
-	transition: opacity 600ms;
+a:hover figcaption,
+a:focus figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	figcaption {
-		transform: translate3d(0, 2rem, 0);
-	}
-	
-	figure::after {
-		border-radius: 50%;
-		opacity: 1;
-		transform: scale(0);
-		transition: transform 900ms;
-	}
-	
-	a:is(:hover, :focus) figure::after {
-		transform: scale(2.5);
-	}
-
-	a:is(:hover, :focus) figcaption {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-		transition: opacity 600ms 400ms, transform 600ms 400ms;
-	}
-
-	a:is(:hover, :focus) img {
-		transform: scale(1.2);
-	}
+a:hover img,
+a:focus img {
+    transform: scale(1.2);
 }
