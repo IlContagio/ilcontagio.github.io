@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'Ortica';
-    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype'); /* Corrected format */
+    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ortica';
+    src: url('/fonts/ORTICA-BOLD.OTF') format('truetype'); /* Bold version of the font */
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -25,6 +32,7 @@ header {
 
 h1 {
     font-family: 'Ortica', sans-serif;
+    font-weight: bold; /* Use the bold version of the font */
     color: #FFF;
     font-size: 2.3em;
 }
@@ -41,10 +49,13 @@ em {
 
 .gallery {
     margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center the gallery */
 }
 
 p.attribution {
-    font-family: 'Ortica', monospace; /* Correct case */
+    font-family: 'Ortica', monospace;
+    font-weight: bold; /* Apply bold weight */
     color: #000;
     text-align: center;
     line-height: 25px;
@@ -72,6 +83,7 @@ ul {
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     max-width: 70%;
     width: 70%;
+    margin: 0 auto; /* Center the grid */
 }
 
 figure {
