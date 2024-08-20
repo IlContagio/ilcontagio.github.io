@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Ortica';
-    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('tff'),
+    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype'); /* Corrected format */
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
     margin: 0;
@@ -18,10 +17,10 @@ header {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
-    position: sticky; /* Keeps the header on top */
-    top: 0; /* Position it at the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other content */
-    width: 100%; /* Full width of the viewport */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 h1 {
@@ -45,7 +44,7 @@ em {
 }
 
 p.attribution {
-    font-family: 'ortica', monospace;
+    font-family: 'Ortica', monospace; /* Correct case */
     color: #000;
     text-align: center;
     line-height: 25px;
