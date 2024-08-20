@@ -2,10 +2,6 @@ body {
     margin: 0;
     padding: 1rem;
     font-family: Lato, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: rgba(20, 20, 20, 1);
     box-sizing: border-box;
 }
@@ -14,10 +10,10 @@ header {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
+    position: sticky; /* Keeps the header on top */
+    top: 0; /* Position it at the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    width: 100%; /* Full width of the viewport */
 }
 
 h1 {
