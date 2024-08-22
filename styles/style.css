@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 2vw; /* Padding proporzionale alla larghezza della finestra */
     text-align: center;
     position: sticky;
     top: 0;
@@ -32,9 +32,10 @@ header {
 
 h1 {
     font-family: 'Ortica', sans-serif;
-    font-weight: bold; /* Use the bold version of the font */
+    font-weight: bold; /* Usa la versione bold del font */
     color: #FFF;
-    font-size: 2.3em;
+    font-size: 4vw; /* Font-size proporzionale alla larghezza della finestra */
+    margin: 0; /* Rimuovi margini per migliorare l'adattamento */
 }
 
 em {
@@ -50,12 +51,12 @@ em {
 .gallery {
     margin-top: 30px;
     display: flex;
-    justify-content: center; /* Center the gallery */
+    justify-content: center; /* Centra la galleria */
 }
 
 p.attribution {
     font-family: 'Ortica', monospace;
-    font-weight: bold; /* Apply bold weight */
+    font-weight: bold; /* Applica il grassetto */
     color: #000;
     text-align: center;
     line-height: 25px;
@@ -80,10 +81,10 @@ ul {
     padding: 0;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-columns: repeat(2, 1fr); /* Due colonne di larghezza uguale */
     max-width: 100%;
     width: 70%;
-    margin: 0 auto; /* Center the grid */
+    margin: 0 auto; /* Centra la griglia */
 }
 
 figure {
