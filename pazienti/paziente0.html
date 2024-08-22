@@ -1,37 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <title>Il Contagio</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .button-left, .button-right {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button-left:hover, .button-right:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <a href="#" class="button-left">Left Button</a>
         <h1>Paziente <em>0</em></h1>
+        <a href="#" class="button-right">Right Button</a>
     </header>
-	
-	<div class="wrapper">
-		<div class="gallery">
-			<ul>
-	<li>
-		<a href="">
-			<figure>
-				<img src="../imgs/cover-0_web.jpg" alt='Paziente-0 Cover'>
-				<figcaption>Paziente 0 Copertina</figcaption>
-			</figure>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<figure>
-				<img src="../imgs/content-0_web.jpg" alt='Paziente 0 - Contents'>
-				<figcaption>Paziente 0 Contenuti</figcaption>
-			</figure>
-		</a>
-	</li>
-</ul>
-		</div>
-	</div>
-</body>
-</html>
