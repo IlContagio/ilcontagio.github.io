@@ -48,6 +48,16 @@ em {
     margin: 40px auto;
 }
 
+.subheader {
+    background-color: #f4f4f4;
+    padding: 2vw; /* Padding proporzionale alla larghezza della finestra */
+    text-align: center;
+    position: center;
+    top: 0;
+    /*z-index: 1000; */
+    width: 100%;
+}
+
 .gallery {
     margin-top: 30px;
     display: flex;
