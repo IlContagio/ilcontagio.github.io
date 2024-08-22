@@ -81,8 +81,8 @@ ul {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    max-width: 70%;
-    width: 70%;
+    max-width: 30%;
+    width: 30%;
     margin: 0 auto; /* Center the grid */
 }
 
