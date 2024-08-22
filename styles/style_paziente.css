@@ -42,7 +42,7 @@ em {
 }
 
 .wrapper {
-	width: 100%;
+	width: 90%;
 	margin: 20px auto;
 	padding: 0 10px;
 }
@@ -69,9 +69,10 @@ div.gallery ul li {
 div.gallery ul li img {
 	width: 100%;
 	height: auto;
-	border: 1px solid #dddddd;
+	border: 5px solid #fff; /* Cornice bianca */
 	background: #f0f0f0;
-	padding: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto di profondità */
+	padding: 10px; /* Spazio tra immagine e bordi */
 }
 
 /* Responsive adjustments */
