@@ -1,144 +1,132 @@
-@font-face {
-    font-family: 'Ortica';
-    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
 
-@font-face {
-    font-family: 'Ortica';
-    src: url('/fonts/ORTICA-BOLD.OTF') format('truetype'); /* Bold version of the font */
-    font-weight: bold;
-    font-style: normal;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
-    margin: 0;
-    padding: 1rem;
-    font-family: 'Ortica', sans-serif;
-    background: rgba(20, 20, 20, 1);
-    box-sizing: border-box;
+	background-color: #f2f2f2;
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
+	width: 100%;
+	background-color: #77cdb4;
+	text-align: center;
 }
 
 h1 {
-    font-family: 'Ortica', sans-serif;
-    font-weight: bold; /* Use the bold version of the font */
-    color: #FFF;
-    font-size: 2.3em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFF;
+	font-size: 2.3em;
 }
 
 em {
-    color: #232027;
+	color: #232027;
 }
 
 .wrapper {
-    max-width: 100%;
-    width: 90%;
-    margin: 40px auto;
+	width: 40%;
+	margin: 40px auto;
 }
 
-.gallery {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; /* Center the gallery */
+div.gallery {
+	margin-top: 30px;
+}
+
+div.gallery ul {
+	list-style-type: none;
+	margin-left: 35px;
+}
+
+/* animation */
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 5px;
+	padding: 5px;
+	z-index: 0;
+}
+
+/* Make sure z-index is higher on hover */
+/* Ensure that hover image overlapped the others */
+div.gallery ul li:hover {
+	z-index: 5;
+}
+
+/* Image is position nicely under li */
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+
+div.gallery ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
 }
 
 p.attribution {
-    font-family: 'Ortica', monospace;
-    font-weight: bold; /* Apply bold weight */
-    color: #000;
-    text-align: center;
-    line-height: 25px;
-    padding-top: 30px;
+	font-family: 'Consolas';
+	color: #000;
+	clear: both;
+	text-align: center;
+	line-height: 25px;
+	padding-top: 30px;
 }
 
 p.attribution a {
-    color: #4c8d7c;
+	color: #4c8d7c;
 }
 
-img {
-    width: 100%;
-    display: block;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    transition: transform 1000ms;
+/* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+	.wrapper {
+		width: 500px;
+	}
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    max-width: 30%;
-    width: 30%;
-    margin: 0 auto; /* Center the grid */
-}
+@media only screen and (max-width: 498px) {
+	.wrapper {
+		width: 300px;
+	}
 
-figure {
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-figure::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(0, 0, 0, 0.5);
-    transform-origin: center;
-    opacity: 0;
-    transform: scale(2);
-    transition: opacity 300ms;
-}
-
-figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    color: white;
-    font-size: 1.2rem;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 600ms, transform 600ms;
-}
-
-a:hover figure::after,
-a:focus figure::after {
-    opacity: 1;
-    transform: scale(2.5);
-    transition: transform 900ms;
-}
-
-a:hover figcaption,
-a:focus figcaption {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: opacity 600ms 400ms, transform 600ms 400ms;
-}
-
-a:hover img,
-a:focus img {
-    transform: scale(1.2);
+	div.gallery ul {
+		list-style-type: none;
+		margin: 0;
+	}
 }
