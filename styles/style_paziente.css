@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Ortica';
+    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ortica';
+    src: url('/fonts/ORTICA-BOLD.OTF') format('truetype'); /* Bold version of the font */
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Ortica', sans-serif;
+    background: rgba(20, 20, 20, 1);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Ortica', sans-serif;
+    font-weight: bold; /* Use the bold version of the font */
+    color: #FFF;
+    font-size: 2.3em;
+}
+
+em {
+    color: #232027;
+}
+
+.wrapper {
+    max-width: 100%;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center the gallery */
+}
+
+p.attribution {
+    font-family: 'Ortica', monospace;
+    font-weight: bold; /* Apply bold weight */
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 30px;
+}
+
+p.attribution a {
+    color: #4c8d7c;
+}
+
+img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    max-width: 30%;
+    width: 30%;
+    margin: 0 auto; /* Center the grid */
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
+}
+
+a:hover figure::after,
+a:focus figure::after {
+    opacity: 1;
+    transform: scale(2.5);
+    transition: transform 900ms;
+}
+
+a:hover figcaption,
+a:focus figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
+}
+
+a:hover img,
+a:focus img {
+    transform: scale(1.2);
+}
