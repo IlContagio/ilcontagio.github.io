@@ -28,14 +28,19 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     font-family: 'Ortica', sans-serif;
     font-weight: bold; /* Use the bold version of the font */
     color: #FFF;
-    font-size: 4vw; /* Maintain font size */
-    margin: 0; /* Remove margins for better fit */
+    font-size: 2.5rem; /* Less proportional scaling */
+    margin: 0;
+    flex-grow: 1;
+    text-align: left; /* Align text to the left */
 }
 
 em {
@@ -144,4 +149,22 @@ a:focus figcaption {
 a:hover img,
 a:focus img {
     transform: scale(1.2);
+}
+
+/* New styles for the button */
+button {
+    background-color: #4c8d7c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'Ortica', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 300ms;
+}
+
+button:hover {
+    background-color: #3b6d5e;
 }
