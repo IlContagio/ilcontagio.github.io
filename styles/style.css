@@ -23,14 +23,14 @@ body {
 header {
     background-color: #f4f4f4;
     padding: 1vw; /* Reduced padding */
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center; /* Centers the content */
+    position: relative; /* Allows for absolute positioning of the button */
 }
 
 h1 {
@@ -39,8 +39,8 @@ h1 {
     color: #FFF;
     font-size: 2.5rem; /* Less proportional scaling */
     margin: 0;
-    flex-grow: 1;
-    text-align: left; /* Align text to the left */
+    text-align: center;
+    flex-grow: 0;
 }
 
 em {
@@ -163,6 +163,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 300ms;
+    position: absolute; /* Position the button absolutely */
+    right: 2vw; /* Margin from the right */
 }
 
 button:hover {
