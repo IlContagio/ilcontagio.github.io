@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: #f4f4f4;
-    padding: 2vw; /* Padding proporzionale alla larghezza della finestra */
+    padding: 1vw; /* Reduced padding */
     text-align: center;
     position: sticky;
     top: 0;
@@ -32,10 +32,10 @@ header {
 
 h1 {
     font-family: 'Ortica', sans-serif;
-    font-weight: bold; /* Usa la versione bold del font */
+    font-weight: bold; /* Use the bold version of the font */
     color: #FFF;
-    font-size: 4vw; /* Font-size proporzionale alla larghezza della finestra */
-    margin: 0; /* Rimuovi margini per migliorare l'adattamento */
+    font-size: 4vw; /* Maintain font size */
+    margin: 0; /* Remove margins for better fit */
 }
 
 em {
@@ -50,27 +50,19 @@ em {
 
 .subheader {
     background-color: #f4f4f4;
-    padding: 2vw; /* Padding proporzionale alla larghezza della finestra */
+    padding: 1vw; /* Reduced padding */
     text-align: center;
-    position: center;
-    top: 0;
-    /*z-index: 1000; */
     width: 100%;
-}
-
-.gallery {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; /* Centra la galleria */
 }
 
 p.attribution {
     font-family: 'Ortica', monospace;
-    font-weight: bold; /* Applica il grassetto */
+    font-weight: bold; /* Apply bold */
     color: #000;
     text-align: center;
-    line-height: -15px;
-    padding-top: -10px;
+    line-height: 1.5; /* Adjust line height */
+    margin: 0;
+    padding: 1vw 0; /* Adjust padding */
 }
 
 p.attribution a {
@@ -91,10 +83,10 @@ ul {
     padding: 0;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr); /* Due colonne di larghezza uguale */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     max-width: 100%;
     width: 70%;
-    margin: 0 auto; /* Centra la griglia */
+    margin: 0 auto; /* Center the grid */
 }
 
 figure {
