@@ -69,8 +69,8 @@ p.attribution {
     font-weight: bold; /* Applica il grassetto */
     color: #000;
     text-align: center;
-    line-height: 25px;
-    padding-top: 30px;
+    line-height: 15px;
+    padding-top: 10px;
 }
 
 p.attribution a {
