@@ -76,9 +76,9 @@ p.attribution a {
 
 img {
     width: 100%;
-    aspect-ratio: 3 / 4; /* Ratio for A3 print */
+    aspect-ratio: 3 / 4;
     object-fit: cover;
-    border: 10px solid white; /* White border */
+    border: 10px solid white;
     box-sizing: border-box;
     transition: transform 1000ms;
 }
@@ -89,19 +89,20 @@ ul {
     padding: 0;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
-    max-width: 70%; /* Occupies a central column */
+    grid-template-columns: repeat(2, 1fr); /* Two elements per row */
+    max-width: 70%;
     margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
     ul {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        max-width: 90%; /* Increase width slightly on smaller screens */
     }
 }
 
 @media (max-width: 768px) {
     ul {
+        max-width: 100%;
         grid-template-columns: 1fr; /* Single column on very small screens */
     }
 }
@@ -163,7 +164,6 @@ a:focus img {
     transform: scale(1.2);
 }
 
-/* New styles for the button */
 button {
     background-color: #4c8d7c;
     color: white;
