@@ -89,21 +89,21 @@ ul {
     padding: 0;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(2, 1fr); /* Two elements per row */
-    max-width: 70%;
+    grid-template-columns: repeat(2, 1fr); /* Always two elements per row */
+    max-width: 70%; /* Central column */
     margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
     ul {
-        max-width: 90%; /* Increase width slightly on smaller screens */
+        max-width: 90%;
     }
 }
 
 @media (max-width: 768px) {
     ul {
         max-width: 100%;
-        grid-template-columns: 1fr; /* Single column on very small screens */
+        grid-template-columns: repeat(2, 1fr); /* Ensure two elements per row on small screens */
     }
 }
 
