@@ -19,6 +19,7 @@ body {
     background: #b0c4de; /* Grigio azzurro per lo sfondo */
     color: black; /* Testo principale nero per buona leggibilità */
     box-sizing: border-box;
+    overflow-x: hidden; /* Evita lo scorrimento orizzontale */
 }
 
 header {
@@ -53,7 +54,7 @@ em {
 }
 
 .subheader {
-    background-color: #5f9ea0; /* Variazione di azzurro scuro per la subheader */
+    background-color: #4682b4; /* Azzurro scuro come l'header */
     color: white; /* Testo bianco per contrasto */
     padding: 1vw;
     text-align: center;
