@@ -16,13 +16,13 @@ body {
     margin: 0;
     padding: 1rem;
     font-family: 'Ortica', sans-serif;
-    background: #4b0082; /* Colore indigo scuro */
-    color: #add8e6; /* Testo principale con light blue */
+    background: #b0c4de; /* Grigio azzurro per lo sfondo */
+    color: black; /* Testo principale nero per buona leggibilità */
     box-sizing: border-box;
 }
 
 header {
-    background-color: #add8e6; /* Colore light blue per il contrasto */
+    background-color: #4682b4; /* Azzurro scuro per l'header */
     padding: 1vw;
     position: sticky;
     top: 0;
@@ -36,14 +36,14 @@ header {
 h1 {
     font-family: 'Ortica', sans-serif;
     font-weight: bold;
-    color: white; /* Testo bianco per contrasto sul background */
+    color: white; /* Testo bianco per il contrasto sull'header */
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
 }
 
 em {
-    color: #ff8c00; /* Dark orange per evidenziare gli elementi */
+    color: black; /* Colore nero per enfasi */
 }
 
 .wrapper {
@@ -53,7 +53,7 @@ em {
 }
 
 .subheader {
-    background-color: #4b0082; /* Indigo per continuità cromatica */
+    background-color: #5f9ea0; /* Variazione di azzurro scuro per la subheader */
     color: white; /* Testo bianco per contrasto */
     padding: 1vw;
     text-align: center;
@@ -63,7 +63,7 @@ em {
 p.attribution {
     font-family: 'Ortica', monospace;
     font-weight: bold;
-    color: #ff8c00; /* Dark orange per un accento vibrante */
+    color: black; /* Testo nero per leggibilità */
     text-align: center;
     line-height: 1.5;
     margin: 0;
@@ -71,14 +71,14 @@ p.attribution {
 }
 
 p.attribution a {
-    color: #add8e6; /* Link in light blue per coerenza */
+    color: black; /* Link in nero per continuità */
 }
 
 img {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    border: 10px solid #add8e6; /* Border con light blue */
+    border: 10px solid white; /* Bordo bianco per far risaltare le immagini */
     box-sizing: border-box;
     transition: transform 1000ms;
 }
@@ -120,7 +120,7 @@ figure::after {
     left: 50%;
     width: 200%;
     height: 200%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Sfumatura nera */
     transform-origin: center;
     opacity: 0;
     transform: scale(2);
@@ -138,7 +138,7 @@ figcaption {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: white; /* Testo bianco per contrasto */
     font-size: 1.2rem;
     z-index: 1;
     opacity: 0;
@@ -165,8 +165,8 @@ a:focus img {
 }
 
 button {
-    background-color: #ff8c00; /* Dark orange per creare un pulsante vibrante */
-    color: white;
+    background-color: #4682b4; /* Azzurro scuro per il pulsante */
+    color: white; /* Testo bianco per contrasto */
     border: none;
     padding: 0.5rem 1rem;
     font-family: 'Ortica', sans-serif;
@@ -180,5 +180,5 @@ button {
 }
 
 button:hover {
-    background-color: #add8e6; /* Light blue al passaggio del mouse */
+    background-color: #5f9ea0; /* Variazione di azzurro scuro al passaggio del mouse */
 }
