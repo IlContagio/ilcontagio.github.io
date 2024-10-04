@@ -16,12 +16,13 @@ body {
     margin: 0;
     padding: 1rem;
     font-family: 'Ortica', sans-serif;
-    background: rgba(75, 0, 130, 1); /* Colore #4b0082 */
+    background: #4b0082; /* Colore indigo scuro */
+    color: #add8e6; /* Testo principale con light blue */
     box-sizing: border-box;
 }
 
 header {
-    background-color: #7fffd4; /* Colore #7fffd4 */
+    background-color: #add8e6; /* Colore light blue per il contrasto */
     padding: 1vw;
     position: sticky;
     top: 0;
@@ -30,21 +31,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 h1 {
     font-family: 'Ortica', sans-serif;
     font-weight: bold;
-    color: #ffd700; /* Colore #ffd700 */
+    color: white; /* Testo bianco per contrasto sul background */
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
-    flex-grow: 0;
 }
 
 em {
-    color: #ff8c00; /* Colore #ff8c00 */
+    color: #ff8c00; /* Dark orange per evidenziare gli elementi */
 }
 
 .wrapper {
@@ -54,7 +53,8 @@ em {
 }
 
 .subheader {
-    background-color: #add8e6; /* Colore #add8e6 */
+    background-color: #4b0082; /* Indigo per continuità cromatica */
+    color: white; /* Testo bianco per contrasto */
     padding: 1vw;
     text-align: center;
     width: 100%;
@@ -63,7 +63,7 @@ em {
 p.attribution {
     font-family: 'Ortica', monospace;
     font-weight: bold;
-    color: #7fff00; /* Colore #7fff00 */
+    color: #ff8c00; /* Dark orange per un accento vibrante */
     text-align: center;
     line-height: 1.5;
     margin: 0;
@@ -71,14 +71,14 @@ p.attribution {
 }
 
 p.attribution a {
-    color: #ff8c00; /* Colore #ff8c00 */
+    color: #add8e6; /* Link in light blue per coerenza */
 }
 
 img {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    border: 10px solid #ffffff;
+    border: 10px solid #add8e6; /* Border con light blue */
     box-sizing: border-box;
     transition: transform 1000ms;
 }
@@ -165,7 +165,7 @@ a:focus img {
 }
 
 button {
-    background-color: #ff8c00; /* Colore #ff8c00 */
+    background-color: #ff8c00; /* Dark orange per creare un pulsante vibrante */
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -180,5 +180,5 @@ button {
 }
 
 button:hover {
-    background-color: #ffd700; /* Colore #ffd700 */
+    background-color: #add8e6; /* Light blue al passaggio del mouse */
 }
