@@ -1,4 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+@font-face {
+    font-family: 'Ortica';
+    src: url('/fonts/ORTICA-LIGHTMOD.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ortica';
+    src: url('/fonts/ORTICA-BOLD.OTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,20 +31,21 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 body {
-    background-color: #4a5d75; /* Grigio-scuro-celeste come prima */
+    background-color: #4a5d75;
 }
 header {
     width: 100%;
-    background-color: #2c3e50; /* Grigio-blu scuro come prima */
+    background-color: #2c3e50;
     text-align: center;
 }
 h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #FFF; /* Mantenuto bianco per il testo dell'header */
+    font-family: 'Ortica', sans-serif; /* Cambiato in Ortica */
+    color: #FFF;
     font-size: 2.3em;
+    font-weight: bold;
 }
 em {
-    color: #232027;
+    color: #b0c4de;
 }
 .wrapper {
     width: 90%;
@@ -63,6 +75,10 @@ div.gallery ul li img {
     background: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
+}
+button {
+    font-family: 'Ortica', sans-serif; /* Cambiato in Ortica */
+    font-weight: bold;
 }
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
