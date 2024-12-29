@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,75 +12,64 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
 body {
-	background-color: #f2f2f2;
+    background-color: #4a5d75; /* Grigio-scuro-celeste come prima */
 }
-
 header {
-	width: 100%;
-	background-color: #77cdb4;
-	text-align: center;
+    width: 100%;
+    background-color: #2c3e50; /* Grigio-blu scuro come prima */
+    text-align: center;
 }
-
 h1 {
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #FFF;
-	font-size: 2.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF; /* Mantenuto bianco per il testo dell'header */
+    font-size: 2.3em;
 }
-
 em {
-	color: #232027;
+    color: #232027;
 }
-
 .wrapper {
-	width: 90%;
-	margin: 20px auto;
-	padding: 0 10px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 10px;
 }
-
 div.gallery {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
-
 div.gallery ul {
-	list-style-type: none;
-	width: 100%;
-	padding: 0;
-	margin: 0;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
 div.gallery ul li {
-	width: 100%;
-	margin: 10px 0;
+    width: 100%;
+    margin: 10px 0;
 }
-
 div.gallery ul li img {
-	width: 100%;
-	height: auto;
-	border: 5px solid #fff; /* Cornice bianca */
-	background: #f0f0f0;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto di profondità */
-	padding: 10px; /* Spazio tra immagine e bordi */
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    background: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
-
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
-	.wrapper {
-		width: 100%;
-	}
-
-	div.gallery ul li {
-		margin: 5px 0;
-	}
+    .wrapper {
+        width: 100%;
+    }
+    div.gallery ul li {
+        margin: 5px 0;
+    }
 }
